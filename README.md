@@ -205,6 +205,13 @@ CREATE INDEX idx_users_email ON users(email);
 4. Push to the branch
 5. Create a Pull Request
 
+   
+## Contributers
+
+1. Mostafa Amer - Backend, nested RAG Pipeline Agent, Webs scraped csv file, and Graph datastructures.
+2. Hammad and Christian - Front-end
+3. AVIK - Flask frontend and backend integration
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details. 
