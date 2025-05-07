@@ -1,6 +1,6 @@
-# Academic Advisor AI System
+# Agentic Academic Advisor AI System
 
-This project implements an AI-powered academic advisor system that helps students understand their academic progress, generate graduation plans, and explore course prerequisites. The system uses advanced language models and graph-based course analysis to provide personalized academic guidance.
+This project implements an AI-powered academic advisor system that helps students understand their academic progress, generate graduation plans, and explore course prerequisites. The system uses advanced language models and graph-based course and courses analysis to provide personalized academic guidance.
 
 ## Project Structure
 
