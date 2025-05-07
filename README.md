@@ -132,6 +132,7 @@ CREATE INDEX idx_users_email ON users(email);
 
 3. Set up environment variables:
    ```bash
+   LANGCHAIN_PROJECT = "<Your Langchain API Project Name>"
    export OPENAI_API_KEY="your_openai_api_key"
    export LANGCHAIN_API_KEY="your_langchain_api_key"
    export LANGCHAIN_ENDPOINT="https://api.smith.langchain.com"
@@ -139,18 +140,29 @@ CREATE INDEX idx_users_email ON users(email);
 
 4. Start the API server:
    ```bash
-   python IAAS/LLMAcadamic-Advisor/api/api.py
+   python IAAS/.vscode/launch.json
    ```
 
 ## Usage
 
-1. Upload student transcript:
+1. Log-in:
+   ```bash
+   As student looking to create a graduation plan or ask the LLM a question:
+   Email: jod@psu.edu
+   password: 1234
+
+   As an Academic Advisor looking to see a graph of major requirments:
+   Email: jwd@psu.edu
+   password: 1234
+
+   ```
+2. Upload student transcript:
    ```bash
    POST /llm/setup-environment
    Content-Type: multipart/form-data
    ```
 
-2. Generate graduation plan:
+3. Generate graduation plan:
    ```bash
    POST /llm/generate-response
    Content-Type: application/json
@@ -159,7 +171,7 @@ CREATE INDEX idx_users_email ON users(email);
    }
    ```
 
-3. View course prerequisites:
+4. View course prerequisites, advisor dashboard:
    ```bash
    POST /llm/generate-major-graph
    Content-Type: application/json
