@@ -1,0 +1,105 @@
+.dashboard-container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 100%; /* Ensure it fits within the viewport */
+  margin-top: 20px;
+  transition: box-shadow 0.3s;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.dashboard-container:hover {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.planner,
+.form-section,
+.result-section {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 100%; /* Ensure it fits within the viewport */
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Add spacing between elements */
+  box-sizing: border-box; /* Ensure padding is included in width/height */
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 1.15rem;
+  color: #333; /* Consistent text color */
+}
+
+select,
+input,
+button,
+textarea {
+  padding: 12px;
+  margin: 8px 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensure consistent sizing */
+  font-size: 1.05rem;
+}
+
+input[type="file"] {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button {
+  background-color: #0056b3;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 18px;
+  font-size: 1.08rem;
+}
+
+button:hover {
+  background-color: #003f7f;
+}
+
+textarea.graduation-plan-output {
+  width: 100%;
+  max-width: 100%; /* Ensure it fits within the viewport */
+  height: 200px;
+  padding: 12px;
+  margin-top: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  resize: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.dashboard-container h2 {
+  font-size: 2.1rem;
+}
+.dashboard-container h3 {
+  font-size: 1.3rem;
+}
+.form-section p,
+.result-section p {
+  font-size: 1.05rem;
+}

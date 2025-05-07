@@ -1,0 +1,42 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python Debugger: Flask",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "flask",
+      "env": {
+        "FLASK_APP": "IAAS/LLMAcadamic-Advisor/api/api.py",
+        "FLASK_DEBUG": "1"
+      },
+      "args": ["run", "--no-debugger", "--no-reload"],
+      "jinja": true,
+      "autoStartBrowser": false
+    },
+    {
+      "command": "npm start",
+      "name": "Run npm start",
+      "request": "launch",
+      "type": "node-terminal",
+      "cwd": "${workspaceFolder}/IAAS/client"
+    },
+    {
+      "command": "node server.js",
+      "name": "Run server.js",
+      "request": "launch",
+      "type": "node-terminal",
+      "cwd": "${workspaceFolder}/IAAS/client/server"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "start client, db conn, and flask",
+      "configurations": [
+        "Run npm start",
+        "Run server.js",
+        "Python Debugger: Flask"
+      ]
+    }
+  ]
+}

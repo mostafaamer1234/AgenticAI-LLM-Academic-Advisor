@@ -1,0 +1,56 @@
+.navbar {
+    background: linear-gradient(135deg, #0056b3, #00a2ff);
+    color: white;
+    padding: 25px;
+    width: 100%; /* Ensure it spans the full width of the viewport */
+    max-width: 100%; /* Prevent it from exceeding the viewport width */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    top: 0;
+    z-index: 1000;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+    border-radius: 0 0 5px 5px;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between links */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    align-items: center; /* Ensure vertical alignment */
+}
+
+.nav-links a,
+.nav-links .dashboard-button,
+.nav-links .profile-button,
+.nav-links .logout-button {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block; /* Ensure consistent alignment */
+    margin: 0; /* Remove any default margins */
+}
+
+.nav-links a:hover,
+.nav-links .dashboard-button:hover,
+.nav-links .profile-button:hover,
+.nav-links .logout-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
