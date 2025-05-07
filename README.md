@@ -86,8 +86,30 @@ IAAS/
 - Enables efficient courses requirments chain analysis for the LLM
 - Supports visualization of Major to course relationships
 
+### 6. User Log-in/Sign-ip Database
+  - Created a MyPHP databse on XAMPP for user Log-in and Sign-up.
+  - You need to create the databse, the following is the MYSQL code to create the tables and their attributes:
+`-- Create the database
+CREATE DATABASE IF NOT EXISTS Advising;
+USE Advising;
 
-### 5. REST API
+-- Create users table
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    role ENUM('student', 'faculty', 'admin') NOT NULL,
+    sex ENUM('Male', 'Female', 'Other') NOT NULL,
+    dateOfBirth DATE NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+-- Add index for better performance on email lookups
+CREATE INDEX idx_users_email ON users(email);`
+
+### 7. REST API
 - Flask-based RESTful API implementation
 - CORS-enabled for cross-origin requests
 - Key endpoints:
