@@ -1,3 +1,5 @@
+#By: Mostafa Amer
+
 # majors_graph.py
 from fuzzywuzzy import process, fuzz
 import io

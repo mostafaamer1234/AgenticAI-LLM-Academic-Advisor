@@ -1,3 +1,5 @@
+#By: Mostafa Amer
+
 from graphExperiment import course_graph, get_course_prerequisites, get_major_course_codes
 import json
 import os
@@ -19,7 +21,7 @@ def setup_environment(whatIfUpload):
     global pdf_retriever, courses_retriever, llm1, llm2
 
     #  Environment Variables
-    LANGCHAIN_PROJECT = "<You Langchain API Project Name>"
+    LANGCHAIN_PROJECT = "<Your Langchain API Project Name>"
     os.environ['LANGCHAIN_TRACING_V2'] = 'true'
     os.environ['LANGCHAIN_ENDPOINT'] = 'https://api.smith.langchain.com'
     os.environ['LANGCHAIN_API_KEY'] = "<You Langchain API Key>"
