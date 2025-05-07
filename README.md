@@ -215,3 +215,7 @@ CREATE INDEX idx_users_email ON users(email);
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details. 
+
+## Contact
+
+For any queries or support, please open contact us at amermostafa.official477@gmail.com
