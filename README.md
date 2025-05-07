@@ -91,8 +91,9 @@ IAAS/
   - You need to create the databse, the following is the MYSQL code to create the tables and their attributes:
 
     
-`
+```
 -- Create the database
+
 CREATE DATABASE IF NOT EXISTS Advising;
 USE Advising;
 
@@ -111,7 +112,7 @@ CREATE TABLE IF NOT EXISTS users (
 
 -- Add index for better performance on email lookups
 CREATE INDEX idx_users_email ON users(email);
-`
+```
 
 ### 7. REST API
 - Flask-based RESTful API implementation
