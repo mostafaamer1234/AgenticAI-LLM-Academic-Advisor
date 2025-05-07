@@ -208,7 +208,7 @@ CREATE INDEX idx_users_email ON users(email);
    
 ## Contributers
 
-1. Mostafa Amer - Backend, nested RAG Pipeline Agent, Webs scraped csv file, and Graph datastructures.
+1. Mostafa Amer - Backend, nested RAG Pipeline Agent, Webs scraped csv file, Graph datastructures, and Faculty dahsboard.
 2. Hammad and Christian - Front-end
 3. AVIK - Flask frontend and backend integration
 
