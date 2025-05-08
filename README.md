@@ -18,7 +18,7 @@ IAAS/
 ## Techniques Used
 
 ### 1. LLM Nested RAG Pipleine
-- I developed a new RAG Approach called a Nested RAG Pipleine for maximum output accuracy. It is hard for an LLM to retrieve all required information from all the provided datasources at once, so what I did is I created a RAG pipeline for each datasource individually, with it's own invoke.LLM and prompt that returns all the required information from that datasource based on the user question. At the end there is the main RAG pipeline called aggregate_and_generate_response(user_question), that uses all the already retrieved information plus some structured data from the PDFs, and uses the main prompt to give the user the most accurate structured response possible.
+- I developed a new RAG Approach called a Nested RAG Pipeline for maximum output accuracy. It is hard for an LLM to retrieve all required information from all the provided datasources at once, so what I did is I created a RAG pipeline for each datasource individually, with it's own invoke.LLM and prompt that returns all the required information from that datasource based on the user question. At the end there is the main RAG pipeline called aggregate_and_generate_response(user_question), that uses all the already retrieved information plus some structured data from the PDFs, and uses the main prompt to give the user the most accurate structured response possible.
 - The RAG code is in (/IAAS/LLMAcadamic-Advisor/LLM/main_copy.py)
 
 ### 2. Creating Graph datastructures through web-scraping
@@ -208,8 +208,8 @@ CREATE INDEX idx_users_email ON users(email);
    
 ## Contributers
 
-1. Mostafa Amer - Backend, nested RAG Pipeline Agent, Webs scraped csv file, Graph datastructures, and Faculty dahsboard.
-2. Hammad and Christian - Front-end
+1. Mostafa Amer - Backend, nested RAG Pipeline Agent, Webs scraped csv file, Graph datastructures, and Faculty dashboard.
+2. Hammad and Christian - Front-end and Database
 3. AVIK - Flask frontend and backend integration
 
 ## License
@@ -219,3 +219,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Contact
 
 For any queries or support, please open contact us at amermostafa.official477@gmail.com
+
+This README was written by: Mostafa Amer
